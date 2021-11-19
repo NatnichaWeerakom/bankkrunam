@@ -1,82 +1,82 @@
 <template>
-  <div class="box">
-    <v-form>
-      <p>Sign up your bank account</p>
-      <v-text-field
-        label="Your Name"
-        outlined
-        dense
-        style="padding: 0px 20px 0px 20px;"
-      />
-      <v-text-field
-        label="Bank Account"
-        outlined
-        dense
-        style="padding: 0px 20px 0px 20px;"
-      />
-      <v-text-field
-        label="Moblie Phone Number"
-        outlined
-        dense
-        style="padding: 0px 20px 0px 20px;"
-      />
-      <v-text-field
-        label="Email"
-        outlined
-        dense
-        style="padding: 0px 20px 0px 20px;"
-      />
-      <v-text-field
-        label="Password"
-        outlined
-        dense
-        style="padding: 0px 20px 10px 20px;"
-        append-icon="mdi-eye"
-      />
-      <div class="mess">
-        Use 6 characters with a mix of numbers and letters
-      </div>
-      <v-row>
-        <div class="check">
-          <v-checkbox
-            color="black"
-            value="black"
-          />
+  <div>
+    <v-card
+      elevation="3"
+      light
+      class="box"
+    >
+      <v-form>
+        <p>Sign up your bank account</p>
+        <v-text-field
+          label="Your Name"
+          outlined
+          dense
+          style="padding: 0px 20px 0px 20px;"
+        />
+        <v-text-field
+          label="Bank Account"
+          outlined
+          dense
+          style="padding: 0px 20px 0px 20px;"
+        />
+        <v-text-field
+          label="Moblie Phone Number"
+          outlined
+          dense
+          style="padding: 0px 20px 0px 20px;"
+        />
+        <v-text-field
+          label="Email"
+          outlined
+          dense
+          style="padding: 0px 20px 0px 20px;"
+        />
+        <v-text-field
+          label="Password"
+          outlined
+          dense
+          style="padding: 0px 20px 10px 20px;"
+          append-icon="mdi-eye"
+        />
+        <div class="mess">
+          Use 6 characters with a mix of numbers and letters
         </div>
-        <div class="check2">
-          <p>
-            By signin up,you agree to<br>
-            Bank's Term of Use & Privacy Policy.
-          </p>
+        <v-row>
+          <div class="check">
+            <v-checkbox
+              color="blue darken-4"
+              value="black"
+              label="By signin up,you agree to
+              Bank's Term of Use & Privacy Policy"
+            />
+          </div>
+        </v-row>
+        <v-row>
+          <v-col class="d-flex justify-center ">
+            <v-btn class="btn1">
+              <span class="txt1">Sign Up</span>
+            </v-btn>
+            <p> or </p>
+            <v-btn
+              class="ma-2"
+              outlined
+              color="indigo"
+            >
+              CANCLE
+            </v-btn>
+          </v-col>
+        </v-row>
+        <div class="signed">
+          Already signed up? <a href="#" class="log">Log in</a>
         </div>
-      </v-row>
-      <v-row>
-        <v-col class="d-flex justify-center ">
-          <v-btn class="btn1">
-            <span class="txt1">Sign Up</span>
-          </v-btn>
-          <p> or </p>
-          <v-btn
-            class="ma-2"
-            outlined
-            color="indigo"
-          >
-            CANCLE
-          </v-btn>
-        </v-col>
-      </v-row>
-      <div class="signed">
-        Already signed up? <a href="#" class="log">Log in</a>
-      </div>
-    </v-form>
+      </v-form>
+    </v-card>
   </div>
 </template>
 
 <style>
 
 .box{
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
   margin: 20px;
   font-family: sans-serif;
 }
